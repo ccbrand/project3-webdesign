@@ -1,0 +1,15 @@
+name: Find Tags
+on: push
+jobs:
+  find-specific-tags:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Find specific tags
+      uses: 
+      with:
+        root: ./
+
+---
+
+Check if home.html and about.html contain the tags: header, main, footer, h1, h2, h3

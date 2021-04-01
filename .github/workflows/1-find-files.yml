@@ -1,0 +1,17 @@
+name: Find Files
+on: push
+jobs:
+  find-specific-files:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Find specific files
+      uses: 
+      with:
+        root: ./
+
+---
+
+Run script to check if repo contains at least the files: home.html, about.html, style.css, images folder
+
+Something like that: https://github.com/jackton1/get-changed-files/blob/master/action.yml

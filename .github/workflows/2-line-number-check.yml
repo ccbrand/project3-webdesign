@@ -1,0 +1,15 @@
+name: Line Number Check
+on: push
+jobs:
+  count-line-number:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Count line number
+      uses: https://github.com/AlDanial/cloc
+      with:
+        root: ./
+
+---
+
+Check if home.html, about.html and style.css contain a minimum of n lines
